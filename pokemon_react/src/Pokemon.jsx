@@ -14,7 +14,7 @@ export const Pokemon = () => {
     try {
       const res = await fetch(API);
       const data = await res.json();
-      //   console.log(data);
+      //   console.log(data); //
 
       const detailedPokemonData = data.results.map(async (curPokemon) => {
         const res = await fetch(curPokemon.url);
